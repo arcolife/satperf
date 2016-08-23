@@ -5,6 +5,8 @@
 
 - hosts: localhost
   gather_facts: false
+  vars_files:
+    - groups_vars/generic.yaml  
   vars:
     ansible_connection: local
     overwrite_existing: true

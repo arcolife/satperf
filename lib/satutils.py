@@ -338,7 +338,7 @@ class MonitoringActions(object):
         # runner.run()
         # print("process stats result: %s" % self.process_stats(runner))
 
-    def upload_dashboards_grafana(self):
+    def upload_dashboard_grafana(self):
         runner = self.prepare_runner(os.path.join(BASE_DIR,
                                      'playbooks/monitoring/', 'dashboards-generic.yaml'))
         runner.run()

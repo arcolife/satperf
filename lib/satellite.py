@@ -120,6 +120,8 @@ class SatelliteCore(SatelliteActions, MonitoringActions):
             self.create_life_cycle()
         if nargs.enable_content:
             self.enable_content()
+        if nargs.upload_dashboard_grafana:
+            self.upload_dashboard_grafana()
         if nargs.register_content_hosts:
             self.register_content_host()
         if nargs.remove_capsule:

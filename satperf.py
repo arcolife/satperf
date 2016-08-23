@@ -44,6 +44,8 @@ def _satperf_usage():
     #     help="Snapshot current Grafana Dashboard")
     parser.add_argument("-g", "--register-content-hosts", action='store_true',
         help="Register content hosts (concurrent or sequential)")
+    parser.add_argument("-i", "--upload-dashboard-grafana", action='store_true',
+        help="Upload dashboard for Satellite (from template) to Grafana")
     parser.add_argument("-l", "--sync-capsule", action='store_true',
         help="Sync capsule (concurrent or sequential)")
     parser.add_argument("-m", "--setup-monitoring", action='store_true',
